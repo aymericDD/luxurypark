@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Car list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for car in cars %}
+            <tr>
+                <td><a href="{{ path('car_show', { 'id': car.id }) }}">{{ car.id }}</a></td>
+                <td>{{ car.name }}</td>
+                <td>{{ car.description }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('car_show', { 'id': car.id }) }}">show</a>
+                        </li>
+                        {% if is_granted('EDIT', car) %}
+                            <li>
+                                <a href="{{ path('car_edit', { 'id': car.id }) }}">Edit</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% if is_granted('ROLE_MARKET') %}
+    <ul>
+        <li>
+            <a href="{{ path('car_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+    {% endif %}
+{% endblock %}

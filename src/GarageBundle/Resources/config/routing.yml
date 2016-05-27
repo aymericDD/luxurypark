@@ -1,0 +1,7 @@
+garage_car:
+    resource: "@GarageBundle/Resources/config/routing/car.yml"
+    prefix:   /car
+
+garage_homepage:
+    path:     /
+    defaults: { _controller: GarageBundle:Default:index }

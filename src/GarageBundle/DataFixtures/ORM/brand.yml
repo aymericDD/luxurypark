@@ -1,0 +1,6 @@
+GarageBundle\Entity\Brand:
+    brand{1..4}:
+        name: <lastName()>
+        univers: univer<numberBetween(0, 999)>
+        mail: <email()>
+        phone: <e164PhoneNumber()>

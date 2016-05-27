@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="c1c37fe12ff3c8249147935cca3fc8cd" resname="header.nav.admin.title">
+        <source>header.nav.admin.title</source>
+        <target>Administration</target>
+      </trans-unit>
+      <trans-unit id="eaf5e4a04ffc947cf6fac055905ccb90" resname="header.nav.admin.car.mylist">
+        <source>header.nav.admin.car.mylist</source>
+        <target>My cars</target>
+      </trans-unit>
+      <trans-unit id="0024837d040672ad89cb4d431a62ceec" resname="header.nav.admin.cars.new">
+        <source>header.nav.admin.cars.new</source>
+        <target>Create car</target>
+      </trans-unit>
+      <trans-unit id="3a3eaca71c0451931f849ca4805ee201" resname="header.nav.pofile.title">
+        <source>header.nav.pofile.title</source>
+        <target>Account</target>
+      </trans-unit>
+      <trans-unit id="cb5842ed674c0b6c506c8e17c8860e66" resname="header.profile.show">
+        <source>header.profile.show</source>
+        <target>Show</target>
+      </trans-unit>
+      <trans-unit id="5c67c29d94738eb932297bbe3a2f2c5e" resname="header.profile.edit">
+        <source>header.profile.edit</source>
+        <target>Edit</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

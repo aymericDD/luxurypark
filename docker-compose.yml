@@ -1,0 +1,22 @@
+web:
+    image: vincentchalamon/symfony
+    volumes:
+        - .:/var/www
+    net: "host"
+    tty: true
+
+mysql:
+    image: mysql
+    net: "host"
+    environment:
+        MYSQL_USER: root
+        MYSQL_ALLOW_EMPTY_PASSWORD: yes
+
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  container_name: myadmin
+  environment:
+    - PMA_ARBITRARY=1
+  restart: always
+  ports:
+    - 8080:80
